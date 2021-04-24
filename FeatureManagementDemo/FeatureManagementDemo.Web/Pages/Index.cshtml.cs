@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.FeatureManagement;
 
 namespace FeatureManagementDemo.Web.Pages
@@ -22,10 +16,8 @@ namespace FeatureManagementDemo.Web.Pages
 
         public void OnGet()
         {
-            var isEnabled = _featureManager.IsEnabledAsync("IsPreviewVersion");
-            
-            PreviewVersionMessage = _featureManager.IsEnabledAsync("IsPreviewVersion").Result
-                ? "Uygulamanın preview versiyonuna ilgili linkten ulaşabilirsiniz."
+            PreviewVersionMessage = (_featureManager.IsEnabledAsync(Feature.IsPreviewVersion).Result)
+                ? "You can reach the preview version by using the below link."
                 : string.Empty;
         }
     }
