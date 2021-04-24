@@ -1,0 +1,20 @@
+﻿@page
+@using Microsoft.FeatureManagement
+@model IndexModel
+@inject IFeatureManager FeatureManager
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+
+    @* @if (FeatureManager.IsEnabledAsync("IsPreviewVersion").Result) *@
+    @* { *@
+    @*     //İlgili işlemler... *@
+    @* } *@
+    
+    @if (!string.IsNullOrEmpty(Model.PreviewVersionMessage))
+    {
+        <div class="alert alert-info">
+            <p>@Model.PreviewVersionMessage</p>
+            <a href="#">Preview</a>
+        </div>
+    }
+</div>
