@@ -39,3 +39,5 @@ C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\Feat
 C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\FeatureManagementDemo.Web\obj\Debug\net5.0\ref\FeatureManagementDemo.Web.dll
 C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\FeatureManagementDemo.Web\obj\Debug\net5.0\FeatureManagementDemo.Web.pdb
 C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\FeatureManagementDemo.Web\obj\Debug\net5.0\FeatureManagementDemo.Web.genruntimeconfig.cache
+C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\FeatureManagementDemo.Web\bin\Debug\net5.0\Microsoft.FeatureManagement.AspNetCore.dll
+C:\Users\engin\OneDrive\Masaüstü\feature-management\FeatureManagementDemo\FeatureManagementDemo.Web\obj\Debug\net5.0\FeatureManagementDemo.Web.MvcApplicationPartsAssemblyInfo.cs

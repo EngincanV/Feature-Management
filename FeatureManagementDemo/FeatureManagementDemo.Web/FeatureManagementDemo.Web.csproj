@@ -6,6 +6,7 @@
 
     <ItemGroup>
       <PackageReference Include="Microsoft.FeatureManagement" Version="2.3.0" />
+      <PackageReference Include="Microsoft.FeatureManagement.AspNetCore" Version="2.3.0" />
     </ItemGroup>
 
 </Project>

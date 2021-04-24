@@ -48,6 +48,10 @@
             "Microsoft.FeatureManagement": {
               "target": "Package",
               "version": "[2.3.0, )"
+            },
+            "Microsoft.FeatureManagement.AspNetCore": {
+              "target": "Package",
+              "version": "[2.3.0, )"
             }
           },
           "imports": [

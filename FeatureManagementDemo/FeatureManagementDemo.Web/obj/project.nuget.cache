@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cY1dUL5N7lTtJfm2XnZSfu1KY8WOuINx+KbRfxWKm5LaPEhfoII7N118lzhnZuHHDZM3998XbG/bm3m1fmRD6w==",
+  "dgSpecHash": "OFjTbAi+woVpSxpzSntW/TMTe3NW/Aqg6DrlhfebsWeTrMCaflk9nYsW34la9CRvtFKmkKG2Qrtr+v2mIJoRMg==",
   "success": true,
   "projectFilePath": "C:\\Users\\engin\\OneDrive\\Masaüstü\\feature-management\\FeatureManagementDemo\\FeatureManagementDemo.Web\\FeatureManagementDemo.Web.csproj",
   "expectedPackageFiles": [
@@ -13,6 +13,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.options\\2.1.1\\microsoft.extensions.options.2.1.1.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.extensions.primitives\\2.1.1\\microsoft.extensions.primitives.2.1.1.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.featuremanagement\\2.3.0\\microsoft.featuremanagement.2.3.0.nupkg.sha512",
+    "C:\\Users\\engin\\.nuget\\packages\\microsoft.featuremanagement.aspnetcore\\2.3.0\\microsoft.featuremanagement.aspnetcore.2.3.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.1\\system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512"
   ],

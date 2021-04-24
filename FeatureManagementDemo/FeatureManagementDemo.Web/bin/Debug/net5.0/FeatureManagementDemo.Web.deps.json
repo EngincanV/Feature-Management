@@ -34,6 +34,7 @@
       "FeatureManagementDemo.Web/1.0.0": {
         "dependencies": {
           "Microsoft.FeatureManagement": "2.3.0",
+          "Microsoft.FeatureManagement.AspNetCore": "2.3.0",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "5.0.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "5.0.0.0",
@@ -375,6 +376,20 @@
         },
         "compile": {
           "lib/net5.0/Microsoft.FeatureManagement.dll": {}
+        }
+      },
+      "Microsoft.FeatureManagement.AspNetCore/2.3.0": {
+        "dependencies": {
+          "Microsoft.FeatureManagement": "2.3.0"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll": {
+            "assemblyVersion": "2.3.0.0",
+            "fileVersion": "2.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll": {}
         }
       },
       "System.Memory/4.5.1": {},
@@ -2147,6 +2162,13 @@
       "sha512": "sha512-uh/rNSND67/YMoCCKO/gd8/L6uBjsI/1EZoFpHAffTWgVQ4MnBbdBBdZx+1eYp0KMJGaAQ6B3pRmv+Levy3Usg==",
       "path": "microsoft.featuremanagement/2.3.0",
       "hashPath": "microsoft.featuremanagement.2.3.0.nupkg.sha512"
+    },
+    "Microsoft.FeatureManagement.AspNetCore/2.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BlwZ6CXW6zZNbMwA4Eoi00d7iLAOA5oX7JTk/JTJP3qY/DdsNvIOk2yUH3qjBaUOGzipj707CfLPYhCDlcDerQ==",
+      "path": "microsoft.featuremanagement.aspnetcore/2.3.0",
+      "hashPath": "microsoft.featuremanagement.aspnetcore.2.3.0.nupkg.sha512"
     },
     "System.Memory/4.5.1": {
       "type": "package",

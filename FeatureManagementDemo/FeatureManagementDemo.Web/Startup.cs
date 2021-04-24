@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FeatureManagementDemo.Web.Helpers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,10 +25,13 @@ namespace FeatureManagementDemo.Web
 
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddControllers();
+            
             services.AddRazorPages();
 
             services.AddFeatureManagement()
-                .AddFeatureFilter<TimeWindowFilter>();
+                .AddFeatureFilter<TimeWindowFilter>()
+                .UseDisabledFeaturesHandler(new DisabledFeatureHandler()); //custom disabled feature handler (return 301)
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -49,7 +53,10 @@ namespace FeatureManagementDemo.Web
 
             app.UseAuthorization();
 
-            app.UseEndpoints(endpoints => { endpoints.MapRazorPages(); });
+            app.UseEndpoints(endpoints => { 
+                endpoints.MapRazorPages();
+                endpoints.MapControllers();
+            });
         }
     }
 }

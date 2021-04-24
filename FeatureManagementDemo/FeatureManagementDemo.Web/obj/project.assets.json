@@ -110,6 +110,21 @@
           "lib/net5.0/Microsoft.FeatureManagement.dll": {}
         }
       },
+      "Microsoft.FeatureManagement.AspNetCore/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.FeatureManagement": "2.3.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "System.Memory/4.5.1": {
         "type": "package",
         "compile": {
@@ -252,6 +267,23 @@
         "microsoft.featuremanagement.nuspec"
       ]
     },
+    "Microsoft.FeatureManagement.AspNetCore/2.3.0": {
+      "sha512": "BlwZ6CXW6zZNbMwA4Eoi00d7iLAOA5oX7JTk/JTJP3qY/DdsNvIOk2yUH3qjBaUOGzipj707CfLPYhCDlcDerQ==",
+      "type": "package",
+      "path": "microsoft.featuremanagement.aspnetcore/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/net5.0/Microsoft.FeatureManagement.AspNetCore.xml",
+        "lib/netcoreapp3.1/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/netcoreapp3.1/Microsoft.FeatureManagement.AspNetCore.xml",
+        "lib/netstandard2.0/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/netstandard2.0/Microsoft.FeatureManagement.AspNetCore.xml",
+        "microsoft.featuremanagement.aspnetcore.2.3.0.nupkg.sha512",
+        "microsoft.featuremanagement.aspnetcore.nuspec"
+      ]
+    },
     "System.Memory/4.5.1": {
       "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
       "type": "package",
@@ -305,7 +337,8 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "Microsoft.FeatureManagement >= 2.3.0"
+      "Microsoft.FeatureManagement >= 2.3.0",
+      "Microsoft.FeatureManagement.AspNetCore >= 2.3.0"
     ]
   },
   "packageFolders": {
@@ -354,6 +387,10 @@
         "targetAlias": "net5.0",
         "dependencies": {
           "Microsoft.FeatureManagement": {
+            "target": "Package",
+            "version": "[2.3.0, )"
+          },
+          "Microsoft.FeatureManagement.AspNetCore": {
             "target": "Package",
             "version": "[2.3.0, )"
           }
